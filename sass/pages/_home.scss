@@ -1,0 +1,111 @@
+#home {	
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 42px;
+	.bg-blue{
+		background-color: $blue;
+	}
+	.title{
+		width: 64%;
+		margin: 0 auto;
+		padding-top: 260px;
+		font-size: 104px;
+		color: $white;
+		text-align: center;
+		@include media("<=tablet"){
+			font-size: 56px;
+		}
+		@include media("<=phone"){
+			font-size: 32px;
+  			padding-top: 170px;
+		}
+
+	}
+	.desc{
+		width: 610px;
+		margin: 35px auto 0 auto;
+		padding-bottom: 110px;
+		font-size: 35px;
+		color: $white;
+		text-align: center; 
+		@include media("<=tablet"){
+			font-size: 27px;
+  			width: 64%;
+		}
+		@include media("<=phone"){
+			font-size: 16px;
+			line-height: 1.2;
+			margin-top: 16px;
+		}
+	}
+
+	.custom-shape-divider-top-1655698897 {
+	  width: 100%;
+	  overflow: hidden;
+	  line-height: 0;
+	  height: 280px;
+	  @include media("<=tablet"){
+		height: 180px;
+	  }
+	  @include media("<=phone"){
+		height: 81px;
+	  }
+	}
+
+	.custom-shape-divider-top-1655698897 > svg {
+	  position: relative;
+	  display: block;
+	  width: 154%;
+	  height: 493px;
+	  @include media("<=tablet"){
+		height: 200px;
+	  }
+	  @include media("<=phone"){
+		height: 90px;
+	  }
+	}
+
+	.custom-shape-divider-top-1655698897 .shape-fill {
+	  fill: $blue;
+	}
+
+	.shape-home {
+	  	position: absolute;
+		z-index: -1;
+		right: -21%;
+		bottom: -5%;
+		transform: rotate(-9deg);
+		@include media("<=tablet"){
+			width: 560px;
+			transform: rotate(-15deg);
+			bottom: 6%;
+			right: -7%;
+			height: auto;
+		}
+		@include media("<=phone"){
+			width: 312px;
+			transform: rotate(-16deg);
+			bottom: 8%;
+		}
+	}
+
+	.dot-white.pos-left {
+	  position: absolute;
+	  z-index: 1;
+	  right: -45px;
+	  top: 36%;
+	  transform: rotate(90deg);
+	}
+
+	.dot-white.pos-buttom {
+	  position: absolute;
+	  bottom: 1px;
+	  left: 20%;
+	  @include media("<=tablet"){
+		bottom: 10%;
+		left: 17%;
+	  }
+	}
+}
+

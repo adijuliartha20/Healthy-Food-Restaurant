@@ -1,0 +1,1975 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_reset.scss */
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+/* line 2, ../../../xampp/htdocs/healthy-food-restaurant/sass/base/_typography.scss */
+body {
+  font-family: calibri;
+}
+
+/**
+*
+* Testing
+*
+**/
+@media (max-width: 640px) {
+  /* line 357, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_breakpoints_css_trick.scss */
+  .include-media-test {
+    background-color: #def;
+  }
+  /* line 361, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_breakpoints_css_trick.scss */
+  .include-media-test:before {
+    content: "<=phone";
+  }
+}
+
+@media (min-width: 641px) {
+  /* line 357, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_breakpoints_css_trick.scss */
+  .include-media-test {
+    background-color: #abc;
+  }
+  /* line 369, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_breakpoints_css_trick.scss */
+  .include-media-test:before {
+    content: ">phone";
+  }
+}
+
+@media (min-width: 815px) and (max-width: 1023px) {
+  /* line 357, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_breakpoints_css_trick.scss */
+  .include-media-test {
+    background-color: #fed;
+  }
+  /* line 377, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_breakpoints_css_trick.scss */
+  .include-media-test:before {
+    content: ">=815px, <desktop";
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 357, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_breakpoints_css_trick.scss */
+  .include-media-test {
+    background-color: #fab;
+  }
+  /* line 385, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_breakpoints_css_trick.scss */
+  .include-media-test:before {
+    content: ">=desktop";
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 391, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_breakpoints_css_trick.scss */
+  .include-media-test:after {
+    content: "Retina" !important;
+  }
+}
+
+/* line 8, ../../../xampp/htdocs/healthy-food-restaurant/sass/helpers/_variables.scss */
+header .container:after, #menu .container .list-menu:after, #promo .item-promo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 14, ../../../xampp/htdocs/healthy-food-restaurant/sass/helpers/_variables.scss */
+body {
+  background: #e3ecc2;
+}
+
+/* line 5, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+:root {
+  --screen-width:     320px;
+  --screen-height:    560px;
+  --header-bg-color:  #673AB7;
+  --splash-bg-color:  #368887;
+}
+
+/* line 26, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__toggle {
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color .15s linear;
+}
+
+/* line 40, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__toggle:hover, .nav__toggle:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 46, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: var(--screen-height);
+  position: relative;
+  z-index: 5;
+  visibility: hidden;
+}
+
+/* line 56, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__item {
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
+}
+
+/* line 61, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__item:nth-child(1) {
+  transform: translateY(-40px);
+}
+
+/* line 61, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__item:nth-child(2) {
+  transform: translateY(-80px);
+}
+
+/* line 61, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__item:nth-child(3) {
+  transform: translateY(-120px);
+}
+
+/* line 61, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__item:nth-child(4) {
+  transform: translateY(-160px);
+}
+
+/* line 61, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__item:nth-child(5) {
+  transform: translateY(-200px);
+}
+
+/* line 66, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__link {
+  color: white;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/* line 76, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav__link:hover, .nav__link:focus {
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 89, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.menuicon {
+  display: block;
+  cursor: pointer;
+  color: white;
+  transform: rotate(0deg);
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* line 97, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.menuicon__bar, .menuicon__circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+/* line 104, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.menuicon__bar {
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: transform .25s ease-in-out;
+}
+
+/* line 109, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.menuicon__circle {
+  transition: stroke-dashoffset .3s linear .1s;
+  stroke-dashoffset: 144.51326;
+  stroke-dasharray: 144.51326;
+}
+
+/* line 121, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.splash {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 1px;
+  height: 1px;
+}
+
+/* line 128, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.splash::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--splash-bg-color);
+  width: 284vmax;
+  height: 284vmax;
+  top: -142vmax;
+  left: -142vmax;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  will-change: transform;
+}
+
+/* line 161, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav:target > .splash::after,
+.nav--open > .splash::after {
+  transform: scale(1);
+}
+
+/* line 166, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav:target .menuicon,
+.nav--open .menuicon {
+  color: white;
+  transform: rotate(180deg);
+}
+
+/* line 170, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav:target .menuicon__circle,
+.nav--open .menuicon__circle {
+  stroke-dashoffset: 0;
+}
+
+/* line 173, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav:target .menuicon__bar:nth-child(1), .nav:target .menuicon__bar:nth-child(4),
+.nav--open .menuicon__bar:nth-child(1),
+.nav--open .menuicon__bar:nth-child(4) {
+  opacity: 0;
+}
+
+/* line 177, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav:target .menuicon__bar:nth-child(2),
+.nav--open .menuicon__bar:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+/* line 180, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav:target .menuicon__bar:nth-child(3),
+.nav--open .menuicon__bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* line 187, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav:target .nav__menu,
+.nav--open .nav__menu {
+  visibility: visible;
+}
+
+/* line 191, ../../../xampp/htdocs/healthy-food-restaurant/sass/vendors/_accessible_navigation.scss */
+.nav:target .nav__item,
+.nav--open .nav__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* line 8, ../../../xampp/htdocs/healthy-food-restaurant/sass/components/_buttons.scss */
+.btn-blue {
+  border: solid 1px #7287ae;
+  background: #7287ae;
+  color: #ffffff;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  padding: 25px 80px;
+  font-size: 20px;
+  letter-spacing: 6px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /* line 8, ../../../xampp/htdocs/healthy-food-restaurant/sass/components/_buttons.scss */
+  .btn-blue {
+    font-size: 14px;
+    padding: 18px 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 8, ../../../xampp/htdocs/healthy-food-restaurant/sass/components/_buttons.scss */
+  .btn-blue {
+    font-size: 14px;
+    padding: 16px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/components/_dot.scss */
+  .dot-white {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/components/_dot.scss */
+  .dot-white {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 10, ../../../xampp/htdocs/healthy-food-restaurant/sass/components/_dot.scss */
+  .dot-blue {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 10, ../../../xampp/htdocs/healthy-food-restaurant/sass/components/_dot.scss */
+  .dot-blue {
+    width: 80px;
+  }
+}
+
+@use "sass:math";
+/* line 6, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  /* line 6, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .container {
+    max-width: 90%;
+  }
+}
+
+/* line 16, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 0) {
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-1-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.33333%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-2-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.66667%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-3-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-4-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.33333%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-5-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.66667%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-6-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-7-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.33333%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-8-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.66667%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-9-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-10-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.33333%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-11-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.66667%;
+  }
+  /* line 24, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-12-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-1-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.33333%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-2-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.66667%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-3-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-4-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.33333%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-5-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.66667%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-6-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-7-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.33333%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-8-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.66667%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-9-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-10-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.33333%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-11-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.66667%;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-12-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 720px) {
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-1-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.33333%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-2-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.66667%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-3-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-4-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.33333%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-5-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.66667%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-6-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-7-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.33333%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-8-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.66667%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-9-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-10-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.33333%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-11-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.66667%;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-12-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-1-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.33333%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-2-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.66667%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-3-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-4-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.33333%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-5-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.66667%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-6-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-7-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.33333%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-8-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.66667%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-9-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-10-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.33333%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-11-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.66667%;
+  }
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-12-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-1-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.33333%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-2-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.66667%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-3-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-4-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.33333%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-5-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.66667%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-6-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-7-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.33333%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-8-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.66667%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-9-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-10-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.33333%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-11-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.66667%;
+  }
+  /* line 60, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_grid.scss */
+  .col-12-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+
+/* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+/* line 9, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+header .logo {
+  float: left;
+  margin-top: 52px;
+}
+
+@media (max-width: 768px) {
+  /* line 9, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+  header .logo {
+    position: absolute;
+    top: 30px;
+    margin-top: 0px;
+    left: 30px;
+    float: inherit;
+  }
+}
+
+/* line 20, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+header .logo img {
+  width: 302px;
+}
+
+@media (max-width: 768px) {
+  /* line 20, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+  header .logo img {
+    width: 230px;
+  }
+}
+
+/* line 27, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+header nav .menu_desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 26, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+  header nav {
+    float: right;
+    margin-top: 70px;
+  }
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+  header nav .menu_desktop {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  /* line 39, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+  header nav .menu_desktop li {
+    display: inline-block;
+  }
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+  header nav .menu_desktop li a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14pt;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 51, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_header.scss */
+  header nav .nav__toggle {
+    display: none;
+  }
+}
+
+/* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+footer {
+  background-color: #7287ae;
+  padding: 80px 0 85px 0;
+}
+
+@media (max-width: 720px) {
+  /* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer {
+    padding: 60px 0 30px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 7, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer .about {
+    margin-bottom: 50px;
+  }
+}
+
+/* line 12, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+footer .about h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 768px) {
+  /* line 12, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer .about h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 12, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer .about h3 {
+    margin-bottom: 24px;
+  }
+}
+
+/* line 25, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+footer .about p {
+  color: #ffffff;
+  font-size: 24px;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  /* line 25, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer .about p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 25, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer .about p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 37, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer .item-menu {
+    margin-bottom: 24px;
+  }
+}
+
+/* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+footer .item-menu h4 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer .item-menu h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer .item-menu h4 {
+    margin-bottom: 13px;
+  }
+}
+
+/* line 55, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+footer .item-menu ul li {
+  margin-bottom: 6px;
+}
+
+/* line 58, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+footer .item-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 58, ../../../xampp/htdocs/healthy-food-restaurant/sass/layout/_footer.scss */
+  footer .item-menu ul li a {
+    font-size: 16px;
+  }
+}
+
+/* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 42px;
+}
+
+/* line 6, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home .bg-blue {
+  background-color: #7287ae;
+}
+
+/* line 9, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home .title {
+  width: 64%;
+  margin: 0 auto;
+  padding-top: 260px;
+  font-size: 104px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* line 9, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .title {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 9, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .title {
+    font-size: 32px;
+    padding-top: 170px;
+  }
+}
+
+/* line 25, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home .desc {
+  width: 610px;
+  margin: 35px auto 0 auto;
+  padding-bottom: 110px;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* line 25, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .desc {
+    font-size: 27px;
+    width: 64%;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 25, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .desc {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 16px;
+  }
+}
+
+/* line 43, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home .custom-shape-divider-top-1655698897 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  height: 280px;
+}
+
+@media (max-width: 768px) {
+  /* line 43, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .custom-shape-divider-top-1655698897 {
+    height: 180px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 43, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .custom-shape-divider-top-1655698897 {
+    height: 81px;
+  }
+}
+
+/* line 56, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home .custom-shape-divider-top-1655698897 > svg {
+  position: relative;
+  display: block;
+  width: 154%;
+  height: 493px;
+}
+
+@media (max-width: 768px) {
+  /* line 56, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .custom-shape-divider-top-1655698897 > svg {
+    height: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 56, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .custom-shape-divider-top-1655698897 > svg {
+    height: 90px;
+  }
+}
+
+/* line 69, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home .custom-shape-divider-top-1655698897 .shape-fill {
+  fill: #7287ae;
+}
+
+/* line 73, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home .shape-home {
+  position: absolute;
+  z-index: -1;
+  right: -21%;
+  bottom: -5%;
+  transform: rotate(-9deg);
+}
+
+@media (max-width: 768px) {
+  /* line 73, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .shape-home {
+    width: 560px;
+    transform: rotate(-15deg);
+    bottom: 6%;
+    right: -7%;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 73, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .shape-home {
+    width: 312px;
+    transform: rotate(-16deg);
+    bottom: 8%;
+  }
+}
+
+/* line 93, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home .dot-white.pos-left {
+  position: absolute;
+  z-index: 1;
+  right: -45px;
+  top: 36%;
+  transform: rotate(90deg);
+}
+
+/* line 101, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+#home .dot-white.pos-buttom {
+  position: absolute;
+  bottom: 1px;
+  left: 20%;
+}
+
+@media (max-width: 768px) {
+  /* line 101, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_home.scss */
+  #home .dot-white.pos-buttom {
+    bottom: 10%;
+    left: 17%;
+  }
+}
+
+/* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu {
+  margin-top: 110px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  /* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu {
+    margin-top: 0px;
+  }
+}
+
+/* line 9, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container h2 {
+  color: #7287ae;
+  text-align: center;
+  font-size: 46px;
+}
+
+@media (max-width: 768px) {
+  /* line 9, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 9, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container h2 {
+    font-size: 28px;
+  }
+}
+
+/* line 20, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .list-menu {
+  margin-top: 108px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  /* line 20, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .list-menu {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 20, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .list-menu {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 32, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .item-menu {
+  float: left;
+  margin-right: 70px;
+  width: calc((100% - 140px) / 3);
+}
+
+@media (max-width: 768px) {
+  /* line 32, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .item-menu {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 32, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .item-menu {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+/* line 46, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .item-menu:nth-child(3) {
+  margin-right: 0px;
+}
+
+/* line 50, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .thumbnail {
+  max-height: 290px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  /* line 50, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .thumbnail {
+    max-height: 173px;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 50, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .thumbnail {
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 50, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .thumbnail {
+    max-height: 300px;
+  }
+}
+
+/* line 64, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 69, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .detail {
+  background: #fff;
+  padding: 25px;
+  color: #504f4f;
+}
+
+/* line 76, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .detail label {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  /* line 76, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .detail label {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 86, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .detail p {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  /* line 86, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .detail p {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+}
+
+/* line 95, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .detail b {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  /* line 95, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .detail b {
+    font-size: 18px;
+  }
+}
+
+/* line 103, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .container .btn-blue {
+  margin: 20px auto 150px auto;
+}
+
+@media (max-width: 768px) {
+  /* line 103, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .container .btn-blue {
+    margin-bottom: 80px;
+  }
+}
+
+/* line 111, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+#menu .dot-blue {
+  position: absolute;
+  bottom: 13%;
+  right: -13px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  /* line 111, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .dot-blue {
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 111, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .dot-blue {
+    bottom: 3%;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 111, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_menu.scss */
+  #menu .dot-blue {
+    bottom: 5%;
+  }
+}
+
+/* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+#promo {
+  position: relative;
+}
+
+/* line 6, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+#promo .thumbnail {
+  max-height: 1016px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  /* line 6, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .thumbnail {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 6, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .thumbnail {
+    max-height: 560px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 6, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .thumbnail {
+    max-height: 380px;
+  }
+}
+
+/* line 19, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+#promo .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 23, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+#promo .detail {
+  background-color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  /* line 26, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .ip-2 {
+    position: relative;
+    padding-bottom: 240px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 32, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .ip-2 .detail {
+    position: absolute;
+    top: 560px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 32, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .ip-2 .detail {
+    top: 380px;
+  }
+}
+
+/* line 41, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+#promo .inside {
+  width: 64%;
+  margin-top: 28%;
+  margin-left: 18%;
+}
+
+@media (max-width: 768px) {
+  /* line 41, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .inside {
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 41, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .inside {
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+}
+
+/* line 55, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+#promo .detail h3 {
+  color: #504f4f;
+  font-size: 74px;
+  margin-bottom: 55px;
+}
+
+@media (max-width: 768px) {
+  /* line 55, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .detail h3 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+}
+
+/* line 64, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+#promo .detail p {
+  color: #504f4f;
+  margin-bottom: 55px;
+  font-size: 34px;
+}
+
+@media (max-width: 768px) {
+  /* line 64, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .detail p {
+    font-size: 20px;
+  }
+}
+
+/* line 72, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+#promo .dot-blue {
+  position: absolute;
+  top: calc(100%/2 - (107px/2));
+  left: 23%;
+}
+
+@media (max-width: 768px) {
+  /* line 72, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .dot-blue {
+    top: calc(100%/2 - (72px/2));
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 72, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .dot-blue {
+    right: 20%;
+    left: inherit;
+    top: calc(100%/2 - (72px/2) + 3%);
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 72, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .dot-blue {
+    top: calc(100%/2 - (72px/2) + 4%);
+    right: 5%;
+  }
+}
+
+/* line 89, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+#promo .dot-white {
+  position: absolute;
+  top: calc(100% - (107px/2));
+  right: 11%;
+}
+
+@media (max-width: 768px) {
+  /* line 89, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .dot-white {
+    top: calc(100% - (72px/2));
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 89, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .dot-white {
+    top: calc(100% - (72px/2) + 6%);
+  }
+}
+
+@media (max-width: 640px) {
+  /* line 89, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_promo.scss */
+  #promo .dot-white {
+    top: calc(100% - (72px/2) + 8%);
+  }
+}
+
+/* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+#order {
+  background-color: #7287ae;
+}
+
+/* line 3, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+#order .master {
+  padding: 97px 0 122px;
+  position: relative;
+}
+
+@media (max-width: 720px) {
+  /* line 3, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+  #order .master {
+    margin-top: 80px;
+  }
+}
+
+/* line 11, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+#order h2 {
+  color: #ffffff;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  /* line 11, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+  #order h2 {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 11, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+  #order h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 26, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+  #order .step {
+    margin-bottom: 50px;
+  }
+}
+
+/* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+#order .step-order label {
+  display: block;
+  width: 105px;
+  height: 105px;
+  background-color: #ffffff;
+  color: #7287ae;
+  font-size: 47px;
+  -moz-border-radius: 105px;
+  -webkit-border-radius: 105px;
+  border-radius: 105px;
+  line-height: 105px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto 54px auto;
+}
+
+@media (max-width: 768px) {
+  /* line 33, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+  #order .step-order label {
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 56, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+#order .step-order strong {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /* line 56, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+  #order .step-order strong {
+    font-size: 24px;
+  }
+}
+
+/* line 68, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+#order .step-order p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 21px;
+  margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 68, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+  #order .step-order p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 68, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+  #order .step-order p {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+/* line 83, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+#order .dot-white {
+  position: absolute;
+  top: calc(100% - (107px/2));
+  left: 10%;
+}
+
+@media (max-width: 768px) {
+  /* line 83, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_order.scss */
+  #order .dot-white {
+    top: calc(100% - (107px/2) + 3%);
+  }
+}
+
+/* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+#delivery {
+  background-image: url(../images/ingradients.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 5, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+#delivery .master {
+  position: relative;
+  padding: 136px 0;
+}
+
+@media (max-width: 768px) {
+  /* line 5, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+  #delivery .master {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 5, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+  #delivery .master {
+    padding: 80px 0;
+  }
+}
+
+/* line 15, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+#delivery h2 {
+  color: #7287ae;
+  font-size: 88px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+@media (max-width: 768px) {
+  /* line 15, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+  #delivery h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 15, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+  #delivery h2 {
+    font-size: 30px;
+  }
+}
+
+/* line 27, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+#delivery p {
+  color: #7287ae;
+  text-align: center;
+  font-size: 40px;
+  width: 80%;
+  margin: 0 auto 90px auto;
+}
+
+@media (max-width: 768px) {
+  /* line 27, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+  #delivery p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 27, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+  #delivery p {
+    font-size: 20px;
+  }
+}
+
+/* line 39, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+#delivery button {
+  margin: 0 auto;
+}
+
+/* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+#delivery .dot-blue {
+  position: absolute;
+  top: calc(100% - (107px/2));
+  right: 10%;
+}
+
+@media (max-width: 768px) {
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+  #delivery .dot-blue {
+    top: calc(100% - (72px/2));
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 42, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_delivery.scss */
+  #delivery .dot-blue {
+    top: calc(100% - (50px/2));
+  }
+}
+
+/* line 1, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni {
+  padding: 110px 0 0 0;
+}
+
+/* line 4, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .master {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 8, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .item-testimonial {
+  text-align: center;
+}
+
+/* line 11, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .item-testimonial b {
+  color: #7287ae;
+  font-size: 150px;
+  font-weight: bold;
+  line-height: 106px;
+}
+
+@media (max-width: 768px) {
+  /* line 11, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .item-testimonial b {
+    font-size: 100px;
+    line-height: 60px;
+  }
+}
+
+/* line 22, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .item-testimonial p {
+  color: #7287ae;
+  font-size: 40px;
+  width: 73%;
+  margin: 0 auto 48px auto;
+}
+
+@media (max-width: 768px) {
+  /* line 22, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .item-testimonial p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 22, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .item-testimonial p {
+    font-size: 20px;
+  }
+}
+
+/* line 36, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .item-testimonial strong {
+  color: #7287ae;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  /* line 36, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .item-testimonial strong {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 36, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .item-testimonial strong {
+    font-size: 28px;
+  }
+}
+
+/* line 49, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .social-media {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 250px;
+}
+
+@media (max-width: 768px) {
+  /* line 49, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .social-media {
+    margin-bottom: 140px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 49, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .social-media {
+    margin-top: 40px;
+  }
+}
+
+/* line 61, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .social-media a {
+  margin: 0 16px;
+}
+
+@media (max-width: 720px) {
+  /* line 61, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .social-media a {
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 68, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .social-media a img {
+    width: 40px;
+    height: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 68, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .social-media a img {
+    width: 26px;
+  }
+}
+
+/* line 78, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .custom-shape-divider-bottom-1655799568 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+/* line 88, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .custom-shape-divider-bottom-1655799568 svg {
+  position: relative;
+  display: block;
+  width: calc(157% + 1.3px);
+  height: 311px;
+}
+
+@media (max-width: 768px) {
+  /* line 88, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .custom-shape-divider-bottom-1655799568 svg {
+    height: 144px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 88, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .custom-shape-divider-bottom-1655799568 svg {
+    height: 110px;
+  }
+}
+
+/* line 101, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .custom-shape-divider-bottom-1655799568 .shape-fill {
+  fill: #7287ae;
+}
+
+/* line 106, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .shape-footer {
+  position: absolute;
+  left: -22%;
+  top: 45%;
+  transform: rotate(-5deg);
+}
+
+@media (max-width: 768px) {
+  /* line 106, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .shape-footer {
+    top: 70%;
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  /* line 106, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .shape-footer {
+    top: 68%;
+    transform: rotate(-12deg);
+    width: 528px;
+    left: -20%;
+  }
+}
+
+@media (max-width: 620px) {
+  /* line 106, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .shape-footer {
+    transform: rotate(-16deg);
+    top: 71%;
+    width: 500px;
+  }
+}
+
+/* line 129, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+#testimoni .dot-blue {
+  position: absolute;
+  z-index: 2;
+  bottom: 16%;
+  left: 12%;
+}
+
+@media (max-width: 768px) {
+  /* line 129, ../../../xampp/htdocs/healthy-food-restaurant/sass/pages/_testimoni.scss */
+  #testimoni .dot-blue {
+    bottom: 7%;
+    left: 10%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

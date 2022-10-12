@@ -1,0 +1,84 @@
+sass/ 
+| 
+|– base/ 
+|   |– _reset.scss       # Reset/normalize 
+|   |– _typography.scss  # Typography rules 
+|   ...                  # Etc… 
+| 
+|– components/ 
+|   |– _buttons.scss     # Buttons 
+|   |– _carousel.scss    # Carousel 
+|   |– _cover.scss       # Cover 
+|   |– _dropdown.scss    # Dropdown 
+|   |– _navigation.scss  # Navigation 
+|   ...                  # Etc… 
+| 
+|– helpers/ 
+|   |– _variables.scss   # Sass Variables 
+|   |– _functions.scss   # Sass Functions 
+|   |– _mixins.scss      # Sass Mixins 
+|   |– _helpers.scss     # Class & placeholders helpers 
+|   ...                  # Etc… 
+| 
+|– layout/ 
+|   |– _grid.scss        # Grid system 
+|   |– _header.scss      # Header 
+|   |– _footer.scss      # Footer 
+|   |– _sidebar.scss     # Sidebar 
+|   |– _forms.scss       # Forms 
+|   ...                  # Etc… 
+| 
+|– pages/ 
+|   |– _home.scss        # Home specific styles 
+|   |– _contact.scss     # Contact specific styles 
+|   ...                  # Etc… 
+| 
+|– themes/ 
+|   |– _theme.scss       # Default theme 
+|   |– _admin.scss       # Admin theme 
+|   ...                  # Etc… 
+| 
+|– vendors/ 
+|   |– _bootstrap.scss   # Bootstrap 
+|   |– _jquery-ui.scss   # jQuery UI 
+|   ...                  # Etc… 
+| 
+| 
+`– main.scss             # primary Sass file 
+
+
+
+
+Tempat 1 Pantai Sanur
+kelebihan
+- tempat bersih
+- luas 
+- bersih
+- private
+- toilet dekat
+
+kekurangan
+- agak jauh dari parkir
+- klo mau dekat bayar lebih mahal 15K
+
+Tempat 2 Pantai Segara
+kelebihan
+- luas
+- tempat dekat dengan parkir
+- tempat dekat dengan toilet
+- karcis murah 5K aja untuk mobil
+
+kekurangan
+- masih ada proyek
+- agak kotor
+
+
+Tempat 3 Renon
+kelebihan
+- dekat dengan parkir
+- karcis murah
+- luas
+- bersih
+
+kekurangan
+- toilet kurang tau dibuka atau tidak

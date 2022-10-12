@@ -1,0 +1,103 @@
+#promo{
+	position: relative;
+	.item-promo{
+		@extend %clearfix;
+	}
+	.thumbnail{
+		max-height: 1016px;
+		overflow:hidden;
+		@include media("<=tablet"){
+			max-height: 400px;
+		}
+		@include media("<=720px"){
+			max-height: 560px;
+		}
+		@include media("<=phone"){
+			max-height: 380px;
+		}
+	}
+	.thumbnail img{
+		width: 100%;
+		height: auto;
+	}
+	.detail{
+		background-color: $white;
+	}
+	.ip-2 {
+		@include media("<=720px"){
+			position: relative;
+			padding-bottom: 240px;
+		}		
+	}
+	.ip-2 .detail {
+		@include media("<=720px"){
+			position: absolute;
+			top: 560px;
+		}
+		@include media("<=phone"){
+			top: 380px;
+		}
+	}
+	.inside {
+	  width: 64%;
+	  margin-top: 28%;
+	  margin-left: 18%;
+	  @include media("<=tablet"){
+		width: 80%;
+		margin-left: 12%;
+		margin-top: 15%;
+	  }
+	  @include media("<=720px"){
+		margin-top: 7%;
+  		margin-bottom: 7%;
+	  }
+	}
+	.detail h3{
+		color: $gray;
+		font-size: 74px;
+		margin-bottom: 55px;
+		@include media("<=tablet"){
+			font-size: 28px;
+  			margin-bottom: 18px;
+		}
+	}
+	.detail p{
+		color: $gray;
+		margin-bottom: 55px;
+		font-size: 34px;
+		@include media("<=tablet"){
+			font-size: 20px;
+		}
+	}
+	.dot-blue {
+	  	position: absolute;
+		top: calc(100%/2 - (107px/2));
+		left: 23%;
+		@include media("<=tablet"){
+			top: calc(100%/2 - (72px/2));
+		}
+		@include media("<=720px"){
+			right: 20%;
+			left: inherit;
+			top: calc(100%/2 - (72px/2) + 3%);
+		}
+		@include media("<=phone"){
+			top: calc(100%/2 - (72px/2) + 4%);
+  			right: 5%;
+		}
+	}
+	.dot-white {
+		position: absolute;
+		top : calc(100% - (107px/2));
+		right: 11%;
+		@include media("<=tablet"){
+			top: calc(100% - (72px/2));
+		}
+		@include media("<=720px"){
+			top: calc(100% - (72px/2) + 6%);
+		}
+		@include media("<=phone"){
+			top: calc(100% - (72px/2) + 8%);
+		}
+	}
+}

@@ -1,0 +1,25 @@
+@mixin rounded-corner($arc) {
+    -moz-border-radius: $arc;
+    -webkit-border-radius: $arc;
+    border-radius: $arc;  
+}
+
+
+.btn-blue {
+  border: solid 1px $blue;
+  background: $blue;
+  color: $white;
+  @include rounded-corner(40px);
+  padding: 25px 80px;
+  font-size: 20px;
+  letter-spacing: 6px;
+  display: block;
+  @include media("<=tablet"){
+    font-size: 14px;
+    padding: 18px 40px;
+  }
+  @include media("<=680px"){
+    font-size: 14px;
+    padding: 16px 40px;
+  }
+}

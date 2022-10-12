@@ -1,0 +1,61 @@
+header {
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	.container{
+		@extend %clearfix;
+	}
+	.logo {
+		float:left;
+		margin-top: 52px;
+		@include media("<=tablet"){
+			position: absolute;
+			top: 30px;
+			margin-top: 0px;
+			left: 30px;
+			float: inherit;
+		}
+	}
+	.logo img{
+		width: 302px;
+		@include media("<=tablet"){
+			width: 230px;
+		}
+	}
+	nav{
+		.menu_desktop{
+			display: none;
+		}
+		@include media(">=tablet"){
+			float:right;
+			margin-top: 70px;
+			.menu_desktop{
+				display: block;
+				margin:0px; 
+				padding:0px;
+				list-style: none;
+			}
+			.menu_desktop li{
+				display: inline-block;
+			}
+			.menu_desktop li a{
+				display: block;
+				padding: 6px 12px;
+				text-decoration: none;
+				color: $white;
+				font-size: 14pt;
+			}
+		}
+
+		.nav__toggle{
+			@include media(">=tablet"){
+				display: none;
+			}
+		}
+	}
+
+
+	
+
+}

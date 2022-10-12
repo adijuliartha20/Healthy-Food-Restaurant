@@ -1,0 +1,14 @@
+//COLOR
+$white : #ffffff;
+$gray : #504f4f;
+$green : #e3ecc2;
+$blue : #7287ae;
+$buttom_dot : calc(0% - (107px/2);
+%clearfix{
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+body{background: $green; }

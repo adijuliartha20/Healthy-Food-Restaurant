@@ -1,0 +1,53 @@
+#delivery{
+	background-image: url(../images/ingradients.webp);
+	background-size: cover;
+	background-position: center;
+	.master{
+		position: relative;
+		padding: 136px 0;
+		@include media("<=tablet"){
+			padding: 100px 0;
+		}
+		@include media("<=720px"){
+			padding: 80px 0;
+		}
+	}
+	h2{
+		color: $blue;
+		font-size: 88px;
+		text-align: center;
+		margin-bottom: 42px;
+		@include media("<=tablet"){
+			font-size: 50px;
+		}
+		@include media("<=720px"){
+			font-size: 30px;
+		}
+	}
+	p{		color: $blue;
+		text-align: center;
+		font-size: 40px;
+		width: 80%;
+		margin: 0 auto 90px auto;
+		@include media("<=tablet"){
+			font-size: 28px;
+		}
+		@include media("<=720px"){
+			font-size: 20px;
+		}
+	}
+	button{
+		margin: 0 auto;
+	}
+	.dot-blue{
+		position:absolute;
+		top: calc(100% - (107px/2));
+		right: 10%;
+		@include media("<=tablet"){
+			top: calc(100% - (72px/2));
+		}
+		@include media("<=720px"){
+			top: calc(100% - (50px/2));
+		}
+	}
+}

@@ -1,0 +1,91 @@
+#order{
+	background-color: $blue;
+	.master{
+		padding: 97px 0 122px;
+		position: relative;
+		@include media("<=720px"){
+			margin-top: 80px;
+		}
+	}
+	
+	h2{
+		color: $white;
+		font-size: 70px;
+		text-align: center;
+		margin-bottom: 100px;
+		@include media("<=tablet"){
+			font-size: 40px;
+  			margin-bottom: 60px;
+		}
+		@include media("<=720px"){
+			font-size: 28px;
+  			margin-bottom: 40px;
+		}
+	}
+
+	.step{
+		@include media("<=720px"){
+			margin-bottom: 50px
+		}
+	}
+
+	.step-order{
+		label{
+			display: block;
+			width: 105px;
+			height: 105px;
+			background-color: #ffffff;
+			color: #7287ae;
+			font-size: 47px;
+			-moz-border-radius: 105px;
+			-webkit-border-radius: 105px;
+			border-radius: 105px;
+			line-height: 105px;
+			text-align: center;
+			font-weight: bold;
+			margin: 0 auto 54px auto;
+			@include media("<=tablet"){
+				font-size: 28px;
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				margin-bottom: 20px;
+			}
+		}
+
+		strong{
+			color: #ffffff;
+			font-size: 60px;
+			font-weight: bold;
+			margin-bottom: 30px;
+			text-align: center;
+			display: block;
+			@include media("<=tablet"){
+				font-size: 24px;
+			}
+		}
+
+		p{
+			color: #ffffff;
+			text-align: center;
+			font-size: 21px;
+			margin: 0 20px;
+			@include media("<=tablet"){
+				font-size: 16px;
+			}
+			@include media("<=720px"){
+				margin: 0 auto;
+				width: 60%;
+			}
+		}
+	}
+
+	.dot-white{
+		position: absolute;
+		top : calc(100% - (107px/2));
+		left: 10%;
+		@include media("<=tablet"){
+			top: calc(100% - (107px/2) + 3%);
+		}
+	}
+}
